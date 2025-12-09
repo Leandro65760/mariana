@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastro da Instituição</title>
+</head>
+
+<body>
+
+    <div class="cadastro-container">
+        
+        <h1>Faça Seu Cadastro</h1>
+
+        <form class="cadastro-form" action="cadastro_sucesso.html">
+
+            <label>Nome da Instituição:</label>
+            <input type="text" required>
+
+            <div class="cadastro-inline">
+                <div style="width: 50%;">
+                    <label>Endereço:</label>
+                    <input type="text" required>
+                </div>
+
+                <div style="width: 50%;">
+                    <label>CNPJ:</label>
+                    <input type="text" required>
+                </div>
+            </div>
+
+            <div class="cadastro-inline">
+                <div style="width: 50%;">
+                    <label>E-mail:</label>
+                    <input type="email" required>
+                </div>
+
+                <div style="width: 50%;">
+                    <label>CPF:</label>
+                    <input type="text" required>
+                </div>
+            </div>
+
+            <label>Anexo do Arquivo:</label>
+            <input type="file" required>
+
+            <p style="font-size: 15px; margin-top: -10px;">❓ Como enviar meu arquivo?</p>
+
+            <div class="cadastro-enviar">
+                <button type="submit">Enviar >></button>
+            </div>
+
+        </form>
+
+    </div>
+
+    <div style="text-align: center; margin-top: 25px;">
+        <button class="pagina-adicione-voltar button" onclick="history.back()">Voltar</button>
+    </div>
+
+</body>
+</html>
